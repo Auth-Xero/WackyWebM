@@ -462,11 +462,11 @@ async function main(selectedModes, videoPath, keyFrameFile, bitrate, maxThread, 
 				}
 
 				// Output log
-				const framePad = String(sameSizeCount).padStart((Math.log10(frameCount) + 1) | 0)
+				/*const framePad = String(sameSizeCount).padStart((Math.log10(frameCount) + 1) | 0)
 				process.stdout.clearLine()
 				process.stdout.cursorTo(0)
 				process.stdout.write(localizeString('convert_progress', { framecount: framePad, startframe: frame, endframe: frame + sameSizeCount - 1, batch_size: frameCount, percent: Math.floor((1000 * totalFramesDone) / frameCount) / 10.0}))
-
+				*/
 				sameSizeCount = 1
 				lastWidth = frameBounds.width
 				lastHeight = frameBounds.height
